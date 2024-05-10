@@ -26,8 +26,8 @@ function Search() {
       </h1>
       <div className={styles.searchNews}>
         {!news && <h1>the searched word did not match</h1>}
+        {news && news.map((item, index) => <NewsCard key={index} {...item} />)}
       </div>
-      {news && news.map((item, index) => <NewsCard key={index} {...item} />)}
     </div>
   );
 }
