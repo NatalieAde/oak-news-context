@@ -18,7 +18,7 @@ function Search() {
         console.log(error);
       });
   }, []);
-  console.log(news);
+
   return (
     <div className={styles.searchPage}>
       <h1>
