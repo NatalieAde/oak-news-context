@@ -12,7 +12,7 @@ function Theme() {
     theme.dispatch({ type: "TOGGLE" });
   };
   return (
-    <div style={{ display: "flex" }}>
+    <div>
       <p
         className={styles.lable}
         style={{ color: darkMode ? "white" : "black" }}
